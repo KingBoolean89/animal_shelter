@@ -12,3 +12,6 @@ class Shelters(models.Model):
     dogs = models.ManyToManyField('animals.Dogs')
     cats = models.ManyToManyField('animals.Cats')
     reptiles = models.ManyToManyField('animals.Reptiles')
+
+    def __str__(self):
+        return self.name
